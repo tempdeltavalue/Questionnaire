@@ -17,11 +17,13 @@
 		CEB25D6F2609FBB0000F598C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D6C2609FBB0000F598C /* Question.swift */; };
 		CEB25D702609FBB0000F598C /* MockQuestionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D6D2609FBB0000F598C /* MockQuestionAPIClient.swift */; };
 		CEB25D712609FBB0000F598C /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D6E2609FBB0000F598C /* Option.swift */; };
-		CEB25D762609FE70000F598C /* ImagesQuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D752609FE70000F598C /* ImagesQuestionCollectionViewCell.swift */; };
-		CEB25D792609FE80000F598C /* TextQuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D782609FE80000F598C /* TextQuestionCollectionViewCell.swift */; };
 		CEB25D7D2609FF09000F598C /* QuestionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D7C2609FF09000F598C /* QuestionsArray.swift */; };
 		CEB25D80260A075B000F598C /* ImageOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D7F260A075B000F598C /* ImageOptionCollectionViewCell.swift */; };
 		CEB25D85260A0E10000F598C /* TextOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D84260A0E10000F598C /* TextOptionCollectionViewCell.swift */; };
+		CED4BF0726154102000E04B4 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BF0626154102000E04B4 /* QuestionHeaderView.swift */; };
+		CED4BF0C2615411C000E04B4 /* QuestionOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BF0B2615411C000E04B4 /* QuestionOptionsView.swift */; };
+		CED4BF0F2615414F000E04B4 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BF0E2615414F000E04B4 /* QuestionCollectionViewCell.swift */; };
+		CED4BF2126154FCE000E04B4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BF2026154FCE000E04B4 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +39,13 @@
 		CEB25D6C2609FBB0000F598C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CEB25D6D2609FBB0000F598C /* MockQuestionAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockQuestionAPIClient.swift; sourceTree = "<group>"; };
 		CEB25D6E2609FBB0000F598C /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		CEB25D752609FE70000F598C /* ImagesQuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesQuestionCollectionViewCell.swift; sourceTree = "<group>"; };
-		CEB25D782609FE80000F598C /* TextQuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestionCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEB25D7C2609FF09000F598C /* QuestionsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsArray.swift; sourceTree = "<group>"; };
 		CEB25D7F260A075B000F598C /* ImageOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEB25D84260A0E10000F598C /* TextOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CED4BF0626154102000E04B4 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
+		CED4BF0B2615411C000E04B4 /* QuestionOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOptionsView.swift; sourceTree = "<group>"; };
+		CED4BF0E2615414F000E04B4 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CED4BF2026154FCE000E04B4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		CEB25D4A2609FB24000F598C /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				CED4BF1F26154FC1000E04B4 /* Extensions */,
+				CED4BF04261540F4000E04B4 /* Views */,
 				CEB25D742609FE52000F598C /* CollectionViewCells */,
 				CEB25D642609FB4B000F598C /* APIClient */,
 				CEB25D4B2609FB24000F598C /* AppDelegate.swift */,
@@ -126,12 +132,28 @@
 		CEB25D742609FE52000F598C /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				CEB25D752609FE70000F598C /* ImagesQuestionCollectionViewCell.swift */,
 				CEB25D7F260A075B000F598C /* ImageOptionCollectionViewCell.swift */,
-				CEB25D782609FE80000F598C /* TextQuestionCollectionViewCell.swift */,
 				CEB25D84260A0E10000F598C /* TextOptionCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		CED4BF04261540F4000E04B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BF0B2615411C000E04B4 /* QuestionOptionsView.swift */,
+				CED4BF0626154102000E04B4 /* QuestionHeaderView.swift */,
+				CED4BF0E2615414F000E04B4 /* QuestionCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CED4BF1F26154FC1000E04B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BF2026154FCE000E04B4 /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,13 +229,15 @@
 			files = (
 				CEB25D80260A075B000F598C /* ImageOptionCollectionViewCell.swift in Sources */,
 				CEB25D7D2609FF09000F598C /* QuestionsArray.swift in Sources */,
+				CED4BF0F2615414F000E04B4 /* QuestionCollectionViewCell.swift in Sources */,
 				CEB25D702609FBB0000F598C /* MockQuestionAPIClient.swift in Sources */,
 				CEB25D502609FB24000F598C /* ViewController.swift in Sources */,
+				CED4BF2126154FCE000E04B4 /* UIImageViewExtension.swift in Sources */,
 				CEB25D6F2609FBB0000F598C /* Question.swift in Sources */,
-				CEB25D792609FE80000F598C /* TextQuestionCollectionViewCell.swift in Sources */,
 				CEB25D712609FBB0000F598C /* Option.swift in Sources */,
+				CED4BF0726154102000E04B4 /* QuestionHeaderView.swift in Sources */,
 				CEB25D4C2609FB24000F598C /* AppDelegate.swift in Sources */,
-				CEB25D762609FE70000F598C /* ImagesQuestionCollectionViewCell.swift in Sources */,
+				CED4BF0C2615411C000E04B4 /* QuestionOptionsView.swift in Sources */,
 				CEB25D4E2609FB24000F598C /* SceneDelegate.swift in Sources */,
 				CEB25D85260A0E10000F598C /* TextOptionCollectionViewCell.swift in Sources */,
 			);

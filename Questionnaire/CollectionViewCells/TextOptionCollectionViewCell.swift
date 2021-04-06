@@ -7,8 +7,20 @@
 
 import UIKit
 
-final class TextOptionCollectionViewCell: UICollectionViewCell {
-    lazy var questionLabel: UILabel = {
+final class TextOptionCollectionViewCell: UICollectionViewCell, Reusable {
+    
+    var data: String? {
+        didSet {
+            optionLabel.text = data
+        }
+    }
+    
+    static var reuseId: String {
+        return "TextOptionCollectionViewCell"
+    }
+    
+    
+    lazy var  optionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -18,11 +30,11 @@ final class TextOptionCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        addSubview(questionLabel)
-        questionLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        questionLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        questionLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        questionLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        addSubview(optionLabel)
+        optionLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        optionLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        optionLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        optionLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

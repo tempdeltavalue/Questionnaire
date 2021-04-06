@@ -7,9 +7,23 @@
 
 import UIKit
 
-final class ImageOptionCollectionViewCell: UICollectionViewCell {
+final class ImageOptionCollectionViewCell: UICollectionViewCell, Reusable {
+    var data: String? {
+        didSet {
+            if let url = data {
+                imageView.downloaded(from: url)
+
+            }
+        }
+    }
+    
+    static var reuseId: String {
+        return "ImageOptionCollectionViewCell"
+    }
+    
     lazy var imageView: UIImageView = {
         let imgView = UIImageView()
+        
         imgView.translatesAutoresizingMaskIntoConstraints = false
         return imgView
     }()

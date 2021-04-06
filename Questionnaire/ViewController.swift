@@ -23,8 +23,9 @@ class ViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionView)
 
-        collectionView.register(ImagesQuestionCollectionViewCell.self, forCellWithReuseIdentifier: "ImagesCollectionViewCell")
-        collectionView.register(TextQuestionCollectionViewCell.self, forCellWithReuseIdentifier: "TextQuestionCollectionViewCell")
+        collectionView.register(QuestionCollectionViewCell<TextOptionCollectionViewCell>.self, forCellWithReuseIdentifier: QuestionCollectionViewCell<TextOptionCollectionViewCell>.reuseId)
+        
+        collectionView.register(QuestionCollectionViewCell<ImageOptionCollectionViewCell>.self, forCellWithReuseIdentifier: QuestionCollectionViewCell<ImageOptionCollectionViewCell>.reuseId)
         
         
         collectionView.dataSource = self
@@ -58,22 +59,29 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if indexPath.row == 0 {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TextQuestionCollectionViewCell", for: indexPath) as? TextQuestionCollectionViewCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuestionCollectionViewCell<TextOptionCollectionViewCell>.reuseId, for: indexPath) as? QuestionCollectionViewCell<TextOptionCollectionViewCell> else {
                 return UICollectionViewCell()
             }
             
-            cell.question = questionArray.questions?[indexPath.row]
+            let question = questionArray.questions?[indexPath.row]
+            cell.data = question?.text
+//            if let optionsView = cell.optionsView as? QuestionOptionsView<TextOptionCollectionViewCell> {
+//                optionsView.options = question?.options
+//            }
+            cell.optionsView.options = question?.options?.map { ($0.text ?? "") }
             
             return cell
         } else {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImagesCollectionViewCell", for: indexPath) as? ImagesQuestionCollectionViewCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuestionCollectionViewCell<ImageOptionCollectionViewCell>.reuseId, for: indexPath) as? QuestionCollectionViewCell<ImageOptionCollectionViewCell> else {
                 return UICollectionViewCell()
             }
             
-            cell.question = questionArray.questions?[indexPath.row]
-            
-            return cell
+            let question = questionArray.questions?[indexPath.row]
+            cell.data = question?.text
+            cell.optionsView.options = question?.options?.map { ($0.text ?? "") }
 
+            return cell
         }
+        
     }
 }
