@@ -12,7 +12,6 @@ final class ImageOptionCollectionViewCell: UICollectionViewCell, Reusable {
         didSet {
             if let url = data {
                 imageView.downloaded(from: url)
-
             }
         }
     }
@@ -30,7 +29,10 @@ final class ImageOptionCollectionViewCell: UICollectionViewCell, Reusable {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        addSubview(imageView)
+        
+        contentView.backgroundColor = .red
+        
+        contentView.addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         imageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true

@@ -7,96 +7,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FA80BC9B-833B-4527-B99E-2997B38F434D"
+            uuid = "F74CB37E-3C23-4BD1-84E6-416DC4D3C7CE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Questionnaire/CollectionViewCells/ImagesCollectionViewCell.swift"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "downloaded(from:contentMode:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2E0D0660-71AA-429C-8EC4-74787B5FF729"
+            uuid = "68914007-F2F7-4B0C-B923-5834ADB60EB7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Questionnaire/CollectionViewCells/ImagesCollectionViewCell.swift"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "downloaded(from:contentMode:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3F27225-D969-4E1E-B78A-96110E0B7D9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "downloaded(from:contentMode:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C65EA567-DB42-4216-BE6A-F6B877BBBF8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "options"
-            landmarkType = "24">
+            landmarkName = "downloaded(from:contentMode:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C65EA567-DB42-4216-BE6A-F6B877BBBF8F - 163841d0c541393a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Questionnaire):__C.UIImageView.downloaded(from: Foundation.URL, contentMode: __C.UIViewContentMode) -&gt; ()"
+                  moduleName = "Questionnaire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykhailomelnychuk/Desktop/Questionnaire/Questionnaire/Extensions/UIImageViewExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "C65EA567-DB42-4216-BE6A-F6B877BBBF8F - b3050009200757be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in (extension in Questionnaire):__C.UIImageView.downloaded(from: Foundation.URL, contentMode: __C.UIViewContentMode) -&gt; ()"
+                  moduleName = "Questionnaire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykhailomelnychuk/Desktop/Questionnaire/Questionnaire/Extensions/UIImageViewExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0AFE8EB6-D2F0-4FBC-8BEF-432FA1AE8918"
+            uuid = "FE837FCE-B10D-495F-82ED-D48019105A9A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Questionnaire/Views/QuestionOptionsView.swift"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "downloaded(from:contentMode:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4096D836-5998-4F2F-8F37-9E29A10A6AE4"
+            uuid = "5E70808A-9371-4B17-85AD-D85AFA3BFD36"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Questionnaire/ViewController.swift"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "downloaded(from:contentMode:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E894091E-3BF1-4AF6-86E4-8EC020398BD6"
+            uuid = "5DFAB58E-3943-4EA1-A91E-12C09A480C70"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Questionnaire/Views/QuestionCollectionViewCell.swift"
+            filePath = "Questionnaire/Extensions/UIImageViewExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "data"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "06109ADD-BE51-4537-BBA3-03CC427A771B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Questionnaire/Views/QuestionOptionsView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "downloaded(from:contentMode:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

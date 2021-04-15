@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
-        // Temporary
-//        flowLayout.itemSize = CGSize(width: 300, height: 300)
         flowLayout.estimatedItemSize = CGSize(width: 300, height: 300)
         flowLayout.itemSize = UICollectionViewFlowLayout.automaticSize
 
@@ -58,6 +56,12 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        return createCell(collectionView: collectionView,
+                          indexPath: indexPath)
+    }
+    
+    func createCell(collectionView: UICollectionView,
+                    indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuestionCollectionViewCell<TextOptionCollectionViewCell>.reuseId, for: indexPath) as? QuestionCollectionViewCell<TextOptionCollectionViewCell> else {
                 return UICollectionViewCell()
@@ -78,10 +82,9 @@ extension ViewController: UICollectionViewDataSource {
             
             let question = questionArray.questions?[indexPath.row]
             cell.data = question?.text
-            cell.optionsView.options = question?.options?.map { ($0.text ?? "") }
+            cell.optionsView.options = question?.options?.map { ($0.img_url ?? "") }
 
             return cell
         }
-        
     }
 }

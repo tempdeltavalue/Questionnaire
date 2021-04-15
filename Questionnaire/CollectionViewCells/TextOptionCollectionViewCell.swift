@@ -25,11 +25,13 @@ final class TextOptionCollectionViewCell: UICollectionViewCell, Reusable {
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
+                
         contentView.addSubview(optionLabel)    
         optionLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         optionLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true

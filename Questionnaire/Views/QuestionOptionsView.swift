@@ -21,15 +21,14 @@ class QuestionOptionsView<T: UICollectionViewCell & Reusable>: UIView, UICollect
     
     lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        
-        
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         let collectionView = UICollectionView(frame: .zero,
                                               collectionViewLayout: flowLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
         collectionView.register(T.self, forCellWithReuseIdentifier: T.reuseId)
         collectionView.dataSource = self
-        
+        collectionView.backgroundColor = .clear
         return collectionView
     }()
     
@@ -51,8 +50,7 @@ class QuestionOptionsView<T: UICollectionViewCell & Reusable>: UIView, UICollect
         collectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
-        print("REUSE ID", T.reuseId)
-      backgroundColor = .cyan
+        backgroundColor = .cyan
         
     }
     required init?(coder: NSCoder) {

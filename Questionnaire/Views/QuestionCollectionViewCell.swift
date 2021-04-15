@@ -27,6 +27,8 @@ class QuestionCollectionViewCell<T: UICollectionViewCell & Reusable>: UICollecti
 
         translatesAutoresizingMaskIntoConstraints = false
         
+        contentView.backgroundColor = .green
+
         headerView = QuestionHeaderView()
         headerView.translatesAutoresizingMaskIntoConstraints = false
 
