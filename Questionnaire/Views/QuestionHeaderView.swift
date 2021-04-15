@@ -43,7 +43,7 @@ final class QuestionHeaderView: UIView {
         backgroundImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         backgroundImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         backgroundImageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-
+      backgroundColor = .yellow
 
     }
     

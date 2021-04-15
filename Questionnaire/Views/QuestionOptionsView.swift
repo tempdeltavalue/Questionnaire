@@ -49,9 +49,10 @@ class QuestionOptionsView<T: UICollectionViewCell & Reusable>: UIView, UICollect
         collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
         print("REUSE ID", T.reuseId)
+      backgroundColor = .cyan
         
     }
     required init?(coder: NSCoder) {

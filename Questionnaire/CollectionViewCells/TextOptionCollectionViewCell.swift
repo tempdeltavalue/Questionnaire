@@ -30,11 +30,12 @@ final class TextOptionCollectionViewCell: UICollectionViewCell, Reusable {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        addSubview(optionLabel)
+        contentView.addSubview(optionLabel)    
         optionLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         optionLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         optionLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         optionLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+      backgroundColor = .red
     }
     
     required init?(coder: NSCoder) {
